@@ -459,7 +459,7 @@ margin: 0 auto;
 }
 
 
-.team--list .item{
+.team--item{
     list-style: none;
     background-color:var(--background-color);
 
@@ -473,16 +473,16 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
 }
-.team--list .item:last-child{
+.team--item:last-child{
     margin-right: 0px;
 }
-.team-description{
+.team--pedestal{
 padding-top:  30px;
 padding-bottom: 30px; 
 }
 
 
-.team--list h3{
+.team--pedestal-title{
     color: var(--title-text-color);
     font-family: 'Roboto';
     font-style: normal;
@@ -492,7 +492,7 @@ padding-bottom: 30px;
     margin-bottom: 10px;
     
 }
- .team--list p{
+ .team--pedestal-description{
      color: var(--primary-text-color);
     font-family: 'Roboto';
     font-style: normal;
@@ -512,12 +512,12 @@ padding-bottom: 30px;
      margin-left: 32px;
  }
 
-.social--network-set li{
+.social--network-card{
     list-style: none;
 display: inline-block;
 margin-right: 10px;
 }
-.social--network-set li:last-child{
+.social--network-card:last-child{
     margin-right: 0px;
 }
 
@@ -535,15 +535,15 @@ margin-right: 10px;
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social--network-icon:hover,.team-icon:focus {
+.social--network-icon:hover,.social--network-icon:focus {
     color: #fff;
     background-color:var(--accent-text-color);
 }
 
-.social-network{
+.social--network{
     fill:currentColor;
 }
-.social-network:focus,.social-network:hover {
+.social--network:focus,.social--network:hover {
     fill: currentColor;
 }
 
@@ -555,7 +555,7 @@ margin-right: 10px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.client-title { 
+.client--title { 
     color:var(--title-text-color);
     text-align: center;
     font-family: 'Roboto';
@@ -573,23 +573,23 @@ margin-right: 10px;
 
 
 
-.icon-lists{
+.client--label-lists{
     display:flex;
     height: auto;
     margin-right: auto;
     margin-left: auto;
 }
-.icon-lists .item{
+.client--label-card{
     display: inline-block;
     list-style: none;
     
     margin-right: 30px;
 }
-.icon-lists .item:last-child{
+.client--label-card:last-child{
     margin-right: 0px;
 }
 
-.icon-lists .item a{
+.client--label-link{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -604,27 +604,27 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 ,fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-.icon-lists .item a:focus,
-.icon-lists .item a:hover {
+.client--label-link:focus,
+.client--label-link:hover {
     color: var(--accent-text-color);
     border-color: var(--accent-text-color);
 
 }
 
-.client-icon{
+.client--label-icon{
     fill:currentColor;
 
 }
 
                   /* footer */
 
-.my-footer{
+.footer{
     background-color: #2F303A;
     padding-top: 60px;
         padding-bottom: 60px;
 } 
 
-.footer-content{
+.footer--content{
     width: 1200px;
     padding-left: 15px;
         padding-right: 15px;
@@ -632,7 +632,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
         margin: 0 auto;
 }
 
-.logo-color-footer {
+.footer--logo-color {
     color: var(--background-color);
 
     font-family: 'Raleway';
@@ -644,11 +644,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     letter-spacing: 0.03em;
 
 }
-.logo-color-footer:focus {
+.footer--logo-color:focus {
 background-color:#2F303A;
 
 }
-.my-location{
+.footer--location{
     color: var(--background-color);
 font-family: 'Roboto';
 font-style: normal;
@@ -657,15 +657,15 @@ line-height: 1.71;
 margin-top: 20px;
 margin-bottom: 9px;
 }
-.contacts-footer{
+.footer--contact-list{
     list-style: none;
     padding-left: 0px;
 }
-.contacts-footer li{
+.footer--contact-card{
 margin-bottom: 9px;
 }
 
-.contact-footer {
+.footer--contact-link {
     color: var(--color-contacts-futter);
 
     font-family: 'Roboto';
@@ -680,10 +680,10 @@ margin-bottom: 9px;
 
 }
 
-.contact-footer:hover,.contact-footer:focus { color: var(--accent-text-color);
+.footer--contact-link:hover,.footer--contact-link:focus { color: var(--accent-text-color);
 }
 
-.footer-icon{
+.footer--network-set{
 
     margin-right: 93px;
     margin-left: 70px;
@@ -695,7 +695,7 @@ margin-bottom: 9px;
 display: flex;
 }
  
-.footer-icon li {
+.footer--network-card {
     display:flex;
     flex-wrap: wrap;
 width:auto;
@@ -704,10 +704,10 @@ margin-right:10px;
 
 	
 }
-.footer-icon li:last-child {
+.footer--network-card:last-child {
     margin-right: 0px;
 }
-.footer-icon h2{
+.footer--network-title{
     color: #fff;
 font-family: Roboto;
     font-weight: 700;
@@ -718,7 +718,7 @@ font-family: Roboto;
 margin-right: 10px;
     margin-bottom: 20px;
 }
-.footer-icon-list{
+.footer--network-icon{
 display: flex;
     align-items: center;
     justify-content: center;
@@ -729,18 +729,18 @@ display: flex;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
         
         
-} .footer-icon-list:hover {
+} .footer--network-icon:hover {
      background-color: var(--accent-text-color);
  }
 
- .footer-icon-list:focus {
+ .footer--network-icon:focus {
      background-color: var(--accent-text-color);
  }
 
 .network-footer{
         fill:#fff;
 }
-.footer-mail-cont h2{
+.footer--form-title{
     color: #fff;
     font-family: Roboto;
         font-weight: 700;
@@ -752,14 +752,14 @@ display: flex;
         margin-bottom: 20px;
  
 }
-.footer-mail{
+.footer--mail{
     display:flex;
    
 }
-.email-footer{
+.footer--form-input{
 color: rgba(255, 255, 255, 0.6);
 }
-.btn-footer-mail{
+.footer--form-button{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -784,7 +784,7 @@ letter-spacing: 0.06em;
 .send-svg{
 margin: 10px;
 }
-.email-footer{
+.footer--form-input{
     width: 358px;
     height: 50px;
     padding-top: 15px;
@@ -862,11 +862,11 @@ padding: 40px;
 }
 
 
-.modal-form{
+.modal--form{
     flex-direction: column;
   
 }
-.modal-titile{
+.modal--titile{
     text-align: center;
     margin-bottom: 30px;
  
@@ -874,7 +874,7 @@ padding: 40px;
 color: #212121;
 
 }
-.modal-titile b {
+.modal--titile-description {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -883,21 +883,21 @@ color: #212121;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.form-fild{
+.form--fild{
     position: relative;
 
 }
 
-.form-fild:focus-within > .modal-svg{
+.form--fild:focus-within > .modal--svg{
     fill:var(--accent-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
    
 }
-.form-fild:hover> .modal-svg{
+.form--fild:hover> .modal--svg{
     fill:var(--accent-text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.modal-input{
+.modal--input{
 margin-bottom: 34px;
 width: 448px;
 height: 40px;
@@ -906,13 +906,13 @@ border-radius: 4px;
 padding-left: 30px;
 
 }
-.modal-input:focus,.modal-input:hover {
+.modal--input:focus,.modal--input:hover {
     fill: var(--accent-text-color);
      border-color: var(--accent-text-color);
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-label{
+.modal--label{
     position: absolute;
     top: -16px;
     left: 0px;
@@ -925,7 +925,7 @@ line-height: 1.16;
 letter-spacing: 0.01em;
 
 }
-.input-tetxterea{
+.input--tetxterea{
 color:rgba(117, 117, 117, 0.5) ;
     margin-bottom: 20px;
 width: 448px;
@@ -941,11 +941,11 @@ padding:12px 16px;
 
 }
 
-.input-tetxterea::placeholder{
+.input--tetxterea::placeholder{
     color:rgba(117, 117, 117, 0.5) ;
 }
 
-.input-tetxterea:focus ,.input-tetxterea:hover{
+.input--tetxterea:focus ,.input--tetxterea:hover{
     border-color: var(--accent-text-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -975,7 +975,7 @@ padding:12px 16px;
     overflow: hidden;
 
 }
-.checkbox-label{
+.checkbox--label{
     display:flex;
     align-items: center;
     font-family: 'Roboto';
@@ -989,7 +989,7 @@ padding:12px 16px;
     color: #757575;
 
 }
-.checkbox-label a{
+.checkbox--link{
     
 }
 .checkbox{
@@ -1000,12 +1000,12 @@ border: solid 2px rgba(33, 33, 33, 1);
 border-radius: 4px;
 margin-right:9px;
 }
-.checkbox-link{
+.checkbox--link{
 color: var(--accent-text-color);
 margin-left: 3px;
 }
 
-.modal-button{
+.modal--button{
     margin-top: 30px;
     width: 200px;
     height: 50px;
@@ -1031,18 +1031,18 @@ letter-spacing: 0.06em;
     
 
 }
-.modal-button:focus,.modal-button:hover{
+.modal--button:focus,.modal--button:hover{
     transition:box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12)
     , 0px 1px 1px rgba(0, 0, 0, 0.14)
     , 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
-.form-button{
+.form--button{
     text-align: center;
 
 }
-.modal-svg{
+.modal--svg{
     fill: currentColor;
 position: absolute;
 left: 12px;
@@ -1050,7 +1050,7 @@ top: 11px;
 }
 
 /* Портфолио */
-.main-container {
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -1058,7 +1058,7 @@ top: 11px;
      box-sizing: content-box;
      
 }
-.portf-button {
+.portf--button {
     color: var(--background-color);
     border-radius: 4px;
     border: none;
@@ -1073,8 +1073,8 @@ top: 11px;
     padding: 6px 22px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portf-button:hover,
-.portf-button:focus{
+.portf--button:hover,
+.portf--button:focus{
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
         box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
         box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -1082,7 +1082,7 @@ top: 11px;
         background-color: var(--accent-text-color);
 }
 
-.portf-button-web {
+.portf--button-web {
     color: var(--title-text-color);
     padding: 6px 22px;
     border: none;
@@ -1099,8 +1099,8 @@ top: 11px;
     ,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     ,color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portf-button-web:hover,
-.portf-button-web:focus {
+.portf--button-web:hover,
+.portf--button-web:focus {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -1109,11 +1109,11 @@ top: 11px;
 
 }
 
-.portf-ul-container{
+.portf--list-container{
     display: flex;
 }
 
-.portf-ul {
+.portf--list {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -1121,12 +1121,12 @@ top: 11px;
 }
 
 
-.portf-li{
+.portf--card{
     list-style: none;
     margin-right: 8px;
 
 }
-.portf-li:last-child{
+.portf--card:last-child{
     margin-right: 0px;
 }
 
